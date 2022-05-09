@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./mainPage.css">
+   <link rel="stylesheet" th:href="@{/css/mainPage.css}" href="../static/css/mainPage.css">
 </head>
-<body><header id="header" class='g-hd f-fadeIn'>
+<body><header id="header" class='g-hd f-fadeIn' th:style="'background: url('+@{images/mask.png}+') center no-repeat;'">
     <div id="geometric" class="geometric">
         <svg id="circle1" data-parallaxify-range-x="100" data-parallaxify-range-y="50" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 120 120" style="transform: matrix(1, 0, 0, 1, -0.55, 1.54167);">
             <circle class="circle" cx="59.5" cy="59.5" r="44.5"></circle>
@@ -58,6 +58,6 @@
     <div class="content">Enter now?</div>
     <div class="content2">Press Enter</div>
 </main>
-<script src="./mainPage.js"></script>
+<script th:src="@{js/mainPage.js}" src="../static/js/mainPage.js"></script>
 </body>
 </html>

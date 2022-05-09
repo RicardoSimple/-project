@@ -84,7 +84,7 @@ setTimeout(function(){
 window.addEventListener("keydown",function(e){
     var keyNum = e.keyCode;
     if(keyNum === 13){
-        window.location="../point.html";
+        window.location.href="../point";
     }
 })
 
