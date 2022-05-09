@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PointControl {
 
-    @GetMapping("/point.html")
+    @GetMapping("/point")
     public String point(Model model){
         return "point";
     }
